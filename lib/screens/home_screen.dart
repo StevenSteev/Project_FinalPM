@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Peliculas API'),
+        title: Text('PELISTEV'),
         elevation: 0,
         actions: [
           IconButton(

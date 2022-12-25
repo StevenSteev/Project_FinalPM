@@ -8,14 +8,14 @@ import 'screens/screens.dart';
 //void main() => runApp(MyApp());
 void main() => runApp(AppState());
 
-// PROVEEDOR
+// PROVIDER TERMINADO ESPAÑOL
 class AppState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-            // P se ejecuta PARA crear primera instancia del PROVEEDOR
+            // P se ejecuta para crear primera instancia del PROVIDER
             create: (_) => MoviesProvider(),
             lazy: false)
       ],

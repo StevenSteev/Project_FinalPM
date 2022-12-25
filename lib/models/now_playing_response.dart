@@ -1,6 +1,6 @@
 // To parse this JSON data, do
 //
-//   Datos y resultados de las peliculas
+//Datos y resultados de las peliculas
 
 import 'dart:convert';
 

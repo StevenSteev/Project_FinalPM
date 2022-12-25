@@ -1,6 +1,6 @@
 // To parse this JSON data, do
-//
-// Buscador de pelis
+//Buscador de pelis
+
 import 'dart:convert';
 
 import 'package:peliculas/models/models.dart';

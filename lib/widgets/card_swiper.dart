@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:peliculas/models/models.dart';
 
 class CardSwiper extends StatelessWidget {
-  // PARA PROVIDER
+  // PARA EL PROVIDER
   final List<Movie> movies;
-  // Se creó la variable movies,Constructor del mismo
+  // Como se creó la variable movies, se habilita el constructor del mismo
   const CardSwiper({Key? key, required this.movies}) : super(key: key);
 
   @override
@@ -29,7 +29,7 @@ class CardSwiper extends StatelessWidget {
       width: double.infinity, //Tomar todo el ancho
       height: size.height * 0.5,
       //color: Colors.indigo,
-      // ANIMACIÓN DE TARJETAS
+      // ANIMACIÓN DE TARJETAS - LIBRERÍA card_swiper 1.0.4
 
       child: Swiper(
           itemCount: movies.length, // tamaño de MOVIE json

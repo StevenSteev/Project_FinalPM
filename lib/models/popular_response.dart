@@ -1,6 +1,5 @@
 // To parse this JSON data, do
-//
-// Resultado de las movies
+// Resultado de las movies del buscador
 
 import 'dart:convert';
 

@@ -1,4 +1,4 @@
-// Se requiere cuando se quiera hacer peticiones populares, por ejemplo
+// Para hacer peticiones populares de pelis
 import 'dart:convert';
 
 class Movie {

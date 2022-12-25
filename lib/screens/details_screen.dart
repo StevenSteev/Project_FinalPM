@@ -5,7 +5,7 @@ import 'package:peliculas/widgets/widgets.dart';
 class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //TODO: Luego cambiar por una instancia de movie
+    //Se cambio las pelis a json
     final Movie movies = ModalRoute.of(context)!.settings.arguments
         as Movie; // SE CAMBIÓ para trabajar con Json
     print(movies.title);

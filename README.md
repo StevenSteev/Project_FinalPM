@@ -1,6 +1,6 @@
 # project
 
-A new Flutter PROJET FOR PMOVIL UTEA.
+A new Flutter PROJECT FOR PMOVIL UTEA.
 
 ## Getting Started
 

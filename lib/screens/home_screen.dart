@@ -8,7 +8,7 @@ import 'package:peliculas/search/delegate.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //  listener, verificar si tiene dependencia y se redibujar,
+    //  listener,no dependencia,
     final moviesProvider = Provider.of<MoviesProvider>(context);
 
     //print(moviesProvider.onDisplayMovies);

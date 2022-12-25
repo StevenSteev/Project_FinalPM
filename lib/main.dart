@@ -1,23 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:peliculas/providers/movie_provider.dart';
+import 'package:provider/provider.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'screens/screens.dart';
+
+//Linea 8 -> Linea 9
+//void main() => runApp(MyApp());
+void main() => runApp(AppState());
+
+// PROVEEDOR
+class AppState extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+            // P se ejecuta PARA crear primera instancia del PROVEEDOR
+            create: (_) => MoviesProvider(),
+            lazy: false)
+      ],
+      child: MyApp(),
+    );
+  }
 }
 
+// CLASE PRINCIPAL MyAPP
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        //Cambiando de proveedor de servicios a nuevo proveedor
-        //Proveedor nuevo encontrado
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Peliculas',
+        initialRoute: 'home',
+        routes: {
+          'home': (_) => HomeScreen(),
+          'details': (_) => DetailsScreen()
+        },
+        // Manejar el tema LIGHT
+        theme: ThemeData.light()
+            .copyWith(appBarTheme: AppBarTheme(color: Colors.red)));
   }
 }

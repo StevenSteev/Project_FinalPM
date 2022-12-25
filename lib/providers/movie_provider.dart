@@ -25,3 +25,4 @@ class MoviesProvider extends ChangeNotifier {
     this.getOnDisplayMovie();
     this.getPopularMovie();
   }
+  
